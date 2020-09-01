@@ -14,4 +14,8 @@ class CharacterTest < Minitest::Test
   def test_it_has_a_name
     assert_equal "KITT", @kitt.name
   end
+
+  def test_it_has_an_actor
+    assert_equal "William Daniels", @kitt.actor
+  end
 end
