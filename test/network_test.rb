@@ -41,6 +41,8 @@ class NetworkTest < Minitest::Test
   end
 
   def test_it_can_show_main_characters
+    @nbc.add_show(@knight_rider)
+    @nbc.add_show(@parks_and_rec)
     expected = [@kitt]
     actual = @nbc.main_characters
 
