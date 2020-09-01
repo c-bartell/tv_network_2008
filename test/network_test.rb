@@ -21,6 +21,6 @@ class NetworkTest < Minitest::Test
 
   def test_it_has_attributes
     assert_equal "NBC", @nbc.name
-    assert_equal [], shows
+    assert_equal [], @nbc.shows
   end
 end
