@@ -24,7 +24,6 @@ class ShowTest < Minitest::Test
   end
 
   def test_it_has_characters
-    skip
     expected = [@michael_knight, @kitt]
     actual = @knight_rider.characters
 
