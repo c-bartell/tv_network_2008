@@ -16,7 +16,6 @@ class CharacterTest < Minitest::Test
   end
 
   def test_it_has_an_actor
-    skip
     assert_equal "William Daniels", @kitt.actor
   end
 
