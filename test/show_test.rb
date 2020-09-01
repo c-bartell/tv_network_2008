@@ -20,10 +20,12 @@ class ShowTest < Minitest::Test
   end
 
   def test_it_has_a_creator
+    skip
     assert_equal "Glen Larson", @knight_rider.creator
   end
 
   def test_it_has_characters
+    skip
     expected = [@michael_knight, @kitt]
     actual = @knight_rider.characters
 
