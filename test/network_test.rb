@@ -23,4 +23,20 @@ class NetworkTest < Minitest::Test
     assert_equal "NBC", @nbc.name
     assert_equal [], @nbc.shows
   end
+
+  def test_it_can_add_shows
+    assert_equal [], @nbc.shows
+
+    @nbc.add_show(@knight_rider)
+    expected = [@knight_rider]
+    actual = @nbc.shows
+
+    assert_equal expected, actual
+
+    @nbc.add_show(@parks_and_rec)
+    expected = [@knight_rider, @parks_and_rec]
+    actual = @nbc.shows
+
+    assert_equal expected, actual
+  end
 end
