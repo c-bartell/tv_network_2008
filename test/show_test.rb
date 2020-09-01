@@ -43,4 +43,5 @@ class ShowTest < Minitest::Test
     actual = @knight_rider.actors
 
     assert_equal expected, actual
+  end
 end

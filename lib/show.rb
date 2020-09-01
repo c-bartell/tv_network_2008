@@ -18,4 +18,10 @@ class Show
       character.salary
     end.actor
   end
+
+  def actors
+    @characters.map do |character|
+      character.actor
+    end
+  end
 end
