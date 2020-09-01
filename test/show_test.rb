@@ -29,4 +29,8 @@ class ShowTest < Minitest::Test
 
     assert_equal expected, actual
   end
+
+  def test_it_can_calculate_total_salary
+    assert_equal 2_600_000, @knight_rider.total_salary
+  end
 end
