@@ -20,7 +20,6 @@ class CharacterTest < Minitest::Test
   end
 
   def test_it_has_a_salary
-    skip
     assert_equal 1_000_000, @kitt.salary
   end
 end
