@@ -39,4 +39,11 @@ class NetworkTest < Minitest::Test
 
     assert_equal expected, actual
   end
+
+  def test_it_can_show_main_characters
+    expected = [@kitt]
+    actual = @nbc.main_characters
+
+    assert_equal expected, actual
+  end
 end
