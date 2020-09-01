@@ -14,4 +14,10 @@ class ShowTest < Minitest::Test
   def test_it_exists
     assert_instance_of Show, @knight_rider
   end
+
+  def test_it_has_a_name
+    assert_equal "Knight Rider", @knight_rider.name
+  end
+
+  
 end
