@@ -22,4 +22,11 @@ class ShowTest < Minitest::Test
   def test_it_has_a_creator
     assert_equal "Glen Larson", @knight_rider.creator
   end
+
+  def test_it_has_characters
+    expected = [@michael_knight, @kitt]
+    actual = @knight_rider.characters
+
+    assert_equal expected, actual
+  end
 end
