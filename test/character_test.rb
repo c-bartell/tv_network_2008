@@ -10,4 +10,8 @@ class CharacterTest < Minitest::Test
   def test_it_exists
     assert_instance_of Character, @kitt
   end
+
+  def test_it_has_a_name
+    assert_equal "KITT", @kitt.name
+  end
 end
