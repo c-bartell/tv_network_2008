@@ -18,4 +18,9 @@ class NetworkTest < Minitest::Test
   def test_it_exists
     assert_instance_of Network, @nbc
   end
+
+  def test_it_has_attributes
+    assert_equal "NBC", @nbc.name
+    assert_equal [], shows
+  end
 end
