@@ -22,4 +22,14 @@ class Network
       correct_name && correct_salary
     end
   end
+
+  def actors_by_show
+    actors = Hash.new
+
+    @shows.each do |show|
+      actors[show] = show.actors
+    end
+
+    actors
+  end
 end
